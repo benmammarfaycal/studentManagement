@@ -6,7 +6,7 @@ form.addEventListener('submit',function(e){
     let prenom=document.querySelector("#prenom").value
     let note=document.querySelector("#note").value
 
-    fetch('api/student/add',{
+    fetch('/api/student/add',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
