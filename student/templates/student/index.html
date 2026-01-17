@@ -1,0 +1,24 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudentAddForm</title>
+</head>
+<body>
+    <h1>Add a student:</h1>
+
+<form id="forms">
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required>
+        <br><br>
+
+        <label for="note">Note d'examen :</label><br>
+        <input type="number" id="note" name="note" min="0" max="20" required>
+        <br><br>
+
+        <button type="submit">Enregistrer</button>
+</form>
+<script src="{% static 'student/form.js' %}"></script>
+</body>
+</html>
